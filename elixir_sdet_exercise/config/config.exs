@@ -9,6 +9,8 @@ use Mix.Config
 # third-party users, it should be done in your "mix.exs" file.
 
 config :hound, driver: "chrome_driver"
+config :facebook, url: "https://www.facebook.com/r.php"
+config :logger, level: :info
 
 # You can configure your application as:
 #
