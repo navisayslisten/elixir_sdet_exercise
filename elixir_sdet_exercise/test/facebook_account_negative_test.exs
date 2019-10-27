@@ -2,7 +2,7 @@ defmodule FacebookAccountNegativeTest do
   # Import helpers
   import CustomSelectors
   import StringFunctions
-  import Waits
+  import WaitFunctions
   import List
   use Hound.Helpers
   use ExUnit.Case
