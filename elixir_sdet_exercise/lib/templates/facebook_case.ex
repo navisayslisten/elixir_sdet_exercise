@@ -5,6 +5,7 @@ defmodule FacebookCase do
   # My attempt at "Page Object Pattern"
   using do
     quote do
+      import ScreenshotMacro
       @first_name_field {:name, "firstname"}
       @last_name_field {:name, "lastname"}
       @email_field {:name, "reg_email__"}

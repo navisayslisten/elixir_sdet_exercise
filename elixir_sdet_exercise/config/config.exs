@@ -8,7 +8,11 @@ use Mix.Config
 # if you want to provide default values for your application for
 # third-party users, it should be done in your "mix.exs" file.
 
-config :hound, driver: "chrome_driver"
+config :hound,
+  driver: "chrome_driver",
+  takes_screenshot: true,
+  screenshot_dir: "screenshots"
+
 config :elixir_sdet_exercise, url: "https://www.facebook.com/r.php"
 config :logger, level: :trace
 
