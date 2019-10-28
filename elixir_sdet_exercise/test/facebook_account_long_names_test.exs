@@ -7,20 +7,6 @@ defmodule FacebookAccountLongNamesTest do
   use ExUnit.Case, async: true
   use FacebookCase, async: true
 
-  def create_basic_account(first, last, email, password, month, day, year) do
-    find_element_by(@first_name_field) |> fill_field(first)
-    find_element_by(@last_name_field) |> fill_field(last)
-    find_element_by(@email_field) |> fill_field(email)
-    find_element_by(@email_confirmation_field) |> fill_field(email)
-    find_element_by(@password_field) |> fill_field(password)
-    select_option(elem(@month_field, 1), month)
-    select_option(elem(@day_field, 1), day)
-    select_option(elem(@year_field, 1), year)
-    gender_buttons = find_all_elements_by(@gender_buttons)
-    Enum.at(gender_buttons, 0) |> click()
-    find_element_by(@sign_up_button) |> click()
-  end
-
   @long_names read_json_as_struct(
                 Path.join(__DIR__, "data/facebook_long_names.json"),
                 %DataStructs.Name{}
