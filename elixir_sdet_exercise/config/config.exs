@@ -10,7 +10,6 @@ use Mix.Config
 
 config :hound,
   driver: "chrome_driver",
-  takes_screenshot: true,
   screenshot_dir: "screenshots"
 
 config :elixir_sdet_exercise, url: "https://www.facebook.com/r.php"
