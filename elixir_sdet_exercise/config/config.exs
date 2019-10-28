@@ -9,8 +9,8 @@ use Mix.Config
 # third-party users, it should be done in your "mix.exs" file.
 
 config :hound, driver: "chrome_driver"
-config :facebook, url: "https://www.facebook.com/r.php"
-config :logger, level: :info
+config :elixir_sdet_exercise, url: "https://www.facebook.com/r.php"
+config :logger, level: :trace
 
 # You can configure your application as:
 #
