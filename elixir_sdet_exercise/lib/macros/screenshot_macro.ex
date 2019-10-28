@@ -14,7 +14,7 @@ defmodule ScreenshotMacro do
           unquote(test_steps)
         rescue
           error ->
-            prefix = String.replace(unquote(test_name), ~r/\W+/, "-")
+            prefix = String.replace(unquote(test_name), ~r/\W+/, "_")
             IO.inspect("Taking screenshot of failure")
             # Took too long to figure out how to create a directory if it
             # doesn't already exist, so screenshots will override each other

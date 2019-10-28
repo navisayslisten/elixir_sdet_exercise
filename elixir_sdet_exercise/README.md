@@ -30,3 +30,5 @@ https://www.facebook.com/help/448505685205813
 https://www.facebook.com/help/112146705538576
 
 I managed to get Screenshots on failure, which are saved to the screenshots directory.
+
+Extra credit test runs forever, but I don't have a real facebook account to test it with. Tried with an old email I still have but it never changed to a new login page after running for quite some time. Eventually just told me "You are attempting too many times" or something like that, but kept me on the login page.
