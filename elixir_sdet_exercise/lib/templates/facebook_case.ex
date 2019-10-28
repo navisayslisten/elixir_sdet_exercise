@@ -37,18 +37,4 @@ defmodule FacebookCase do
       hound_session()
     end
   end
-
-  setup do
-    url = Application.get_env(:elixir_sdet_exercise, :url)
-
-    case url do
-      nil -> nil
-      "" -> nil
-      _ -> url
-    end
-
-    Hound.start_session()
-    navigate_to(url)
-    :ok
-  end
 end

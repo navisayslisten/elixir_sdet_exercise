@@ -12,7 +12,7 @@ config :hound,
   driver: "chrome_driver",
   screenshot_dir: "screenshots"
 
-config :elixir_sdet_exercise, url: "https://www.facebook.com/r.php"
+config :elixir_sdet_exercise, url: "https://www.facebook.com"
 config :logger, level: :trace
 
 # You can configure your application as:

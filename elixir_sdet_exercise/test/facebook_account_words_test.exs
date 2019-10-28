@@ -12,6 +12,20 @@ defmodule FacebookAccountWordsTest do
                     %DataStructs.Name{}
                   )
 
+  setup do
+    url = "#{Application.get_env(:elixir_sdet_exercise, :url)}/r.php"
+
+    case url do
+      nil -> nil
+      "" -> nil
+      _ -> url
+    end
+
+    Hound.start_session()
+    navigate_to(url)
+    :ok
+  end
+
   for name <- @too_many_words do
     @first_name name.first
     @last_name name.last

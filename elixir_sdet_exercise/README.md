@@ -23,3 +23,10 @@ Install erlang and elixir:
 To run tests: `mix test`
 
 For some reason, even though I thought I had installed all dependencies, the first time I ran the `mix test` command it told me to install rebar3. Will ask about this in the interview as I'm not entirely sure how `mix deps.get` missed that. A reinstall of dependencies did not need to reinstall rebar3.
+
+## Facebook Test Examples
+The handful of tests I have in this project use some of Facebook's "helpful" documentation.
+https://www.facebook.com/help/448505685205813
+https://www.facebook.com/help/112146705538576
+
+I managed to get Screenshots on failure, which are saved to the screenshots directory.
