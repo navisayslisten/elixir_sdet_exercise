@@ -1,6 +1,6 @@
-{
+[
   {"first": "First!", "last": "Last"},
   {"first": "First", "last": "Last!"},
   {"first": "@me", "last": "DontAtMeBro"},
   {"first": "DontAtMeBro", "last": "@me"}
-}
+]
